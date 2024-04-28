@@ -246,38 +246,37 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="card-footer text-right">
+                                <input type="submit" class="btn btn-primary " value="Simpan Data">
+                            </div>
+                        </form>
                     </div>
-                    <div class="card-footer text-right">
-                        <input type="submit" class="btn btn-primary " value="Simpan Data">
-                    </div>
-                    </form>
                 </div>
             </div>
-        </div>
-        <!-- End Modal -->
-        <script type="text/javascript">
-            // Ubah Profil
-            var loadFile2 = function(event) {
-                var output2 = document.getElementById('output2');
-                output2.src = URL.createObjectURL(event.target.files[0]);
-            };
-        </script>
+            <!-- End Modal -->
+            <script type="text/javascript">
+                // Ubah Profil
+                var loadFile2 = function(event) {
+                    var output2 = document.getElementById('output2');
+                    output2.src = URL.createObjectURL(event.target.files[0]);
+                };
+            </script>
 
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        <script src="js/sb-admin-2.min.js"></script>
-        <script src="vendor/chart.js/Chart.min.js"></script>
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-        <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-        <script src="js/demo/datatables-demo.js"></script>
-        <script src="bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-        <script>
-            $('select').selectpicker();
-        </script>
-        <script src="js/sa2/sweetalert2.all.min.js"></script>
-        <script src="js/sa2/alert.js"></script>
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script src="js/sb-admin-2.min.js"></script>
+            <script src="vendor/chart.js/Chart.min.js"></script>
+            <script src="js/demo/chart-area-demo.js"></script>
+            <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+            <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+            <script src="js/demo/datatables-demo.js"></script>
+            <script src="bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+            <script>
+                $('select').selectpicker();
+            </script>
+            <script src="js/sa2/sweetalert2.all.min.js"></script>
+            <script src="js/sa2/alert.js"></script>
 </body>
 
 </html>

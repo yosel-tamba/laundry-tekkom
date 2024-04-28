@@ -39,13 +39,6 @@ class Profil extends Controller
                     'required' => '{field} harus diisi.',
                     'min_length' => '{field} minimal berisi 5 karekter.'
                 ]
-            ],
-            'id_outlet' => [
-                'label' => 'Outlet',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} harus diisi.'
-                ]
             ]
         ])) {
             $validation = \Config\Services::validation();
@@ -79,7 +72,7 @@ class Profil extends Controller
             'id_user'   => $this->request->getPost('id_user'),
             'id_outlet' => $this->request->getPost('id_outlet'),
             'nama_user' => $this->request->getPost('nama_user'),
-            'password'  => md5($this->request->getVar('password')),
+            'password'  => md5(strval($this->request->getPost('password'))),
             'passconf'  => $this->request->getPost('password'),
             'username'  => $this->request->getPost('username'),
             'role'      => session()->get('role'),

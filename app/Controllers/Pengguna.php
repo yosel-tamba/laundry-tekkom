@@ -82,7 +82,7 @@ class Pengguna extends Controller
 
         $this->userModel->save([
             'nama_user' => $this->request->getPost('nama_user'),
-            'password'  => $this->request->getPost('password'),
+            'password'  => md5(strval($this->request->getPost('password'))),
             'passconf'  => $this->request->getPost('password'),
             'username'  => $this->request->getPost('username'),
             'role'      => $this->request->getPost('role'),
@@ -134,7 +134,7 @@ class Pengguna extends Controller
         $this->userModel->save([
             'id_user'   => $this->request->getPost('id_user'),
             'nama_user' => $this->request->getPost('nama_user'),
-            'password'  => $this->request->getPost('password'),
+            'password'  => md5(strval($this->request->getPost('password'))),
             'passconf'  => $this->request->getPost('password'),
             'username'  => $this->request->getPost('username'),
             'role'      => $this->request->getPost('role'),
