@@ -34,6 +34,7 @@
                         <th>Nama</th>
                         <th>Jenis</th>
                         <th>Harga</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,6 +62,7 @@
                         <th>Nama</th>
                         <th>Jenis</th>
                         <th>Harga</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
             </table>
