@@ -27,7 +27,7 @@
                                 <div class="icon h1">
                                     <i class="fas fa-tint"></i>
                                 </div>
-                                <div class="text mx-3 h1">TEKKOM<sup class="h5">Laundry</sup></div>
+                                <div class="text mx-3 h1">CleanBe<sup class="h5"></sup></div>
                             </div>
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>

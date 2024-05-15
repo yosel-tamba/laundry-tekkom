@@ -84,15 +84,6 @@ class Registrasi extends Controller
                 'errors' => [
                     'required' => '{field} harus diisi.'
                 ]
-            ],
-            'diskon' => [
-                'label' => 'Diskon',
-                'rules' => 'required|numeric|max_length[3]',
-                'errors' => [
-                    'required' => '{field} harus diisi.',
-                    'numeric' => '{field} hanya berupa angka saja.',
-                    'max_length' => '{field} tidak boleh lebih dari 3 digit.'
-                ]
             ]
         ])) {
             $validation = \Config\Services::validation();

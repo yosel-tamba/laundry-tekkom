@@ -34,7 +34,9 @@
                         <th>Nama</th>
                         <th>Jenis</th>
                         <th>Harga</th>
-                        <th>Aksi</th>
+                        <?php if (session()->get('role') == 'Admin') { ?>
+                            <th>Aksi</th>
+                        <?php } ?>
                     </tr>
                 </thead>
                 <tbody>
@@ -62,7 +64,9 @@
                         <th>Nama</th>
                         <th>Jenis</th>
                         <th>Harga</th>
-                        <th>Aksi</th>
+                        <?php if (session()->get('role') == 'Admin') { ?>
+                            <th>Aksi</th>
+                        <?php } ?>
                     </tr>
                 </thead>
             </table>

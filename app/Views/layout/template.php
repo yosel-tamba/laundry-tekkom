@@ -49,7 +49,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-tint"></i>
                 </div>
-                <div class="sidebar-brand-text mx-2">TEKKOM<sup>Laundry</sup></div>
+                <div class="sidebar-brand-text mx-2">Clean Be<sup></sup></div>
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item <?= $judul == 'Dashboard' ? 'active' : null ?>">
