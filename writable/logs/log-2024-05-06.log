@@ -1,0 +1,50 @@
+ERROR - 2024-05-06 10:30:41 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'laundry_tekkom', 3306, '', 0)
+#1 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laundry-tekkom\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 D:\laundry-tekkom\app\Models\UserModel.php(30): CodeIgniter\BaseModel->first()
+#7 D:\laundry-tekkom\app\Controllers\Login.php(26): App\Models\UserModel->getAuthLogin('admin', '321')
+#8 D:\laundry-tekkom\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Login->ceklogin()
+#9 D:\laundry-tekkom\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\laundry-tekkom\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\laundry-tekkom\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\laundry-tekk...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laundry-tekkom\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#5 D:\laundry-tekkom\app\Models\UserModel.php(30): CodeIgniter\BaseModel->first()
+#6 D:\laundry-tekkom\app\Controllers\Login.php(26): App\Models\UserModel->getAuthLogin('admin', '321')
+#7 D:\laundry-tekkom\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Login->ceklogin()
+#8 D:\laundry-tekkom\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\laundry-tekkom\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laundry-tekkom\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\laundry-tekkom\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\laundry-tekk...')
+#12 {main}
+CRITICAL - 2024-05-06 10:30:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(30): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Login.php(26): App\Models\UserModel->getAuthLogin('admin', '321')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Login->ceklogin()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\laundry-tekkom\\public\\index.php')
